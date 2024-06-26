@@ -71,3 +71,35 @@ pnpm 包使用
 整理编写文章
 
 antd 封装组件说明
+grid 布局，表单查询多个，默认展示一行，点击更多展开更多
+
+### Ant Design Vue
+
+[Ant Design Vue传送阵](https://www.antdv.com/components/overview)
+
+### PUG 语法安装
+
+    pnpm i pug pug-html-loader --save-dev
+
+vue
+
+```html
+<template lang="pug"> div h1 Hello PUG! span Hello Span Tag </template>
+```
+
+若 Vite 中引用
+
+    pnpm add vite-plugin-pug --save-dev
+
+`vite.config.js` 配置
+
+```js
+import pug from 'vite-plugin-pug'
+export default defineConfig({
+  plugins: [
+    pug({
+      /** 插件选项 */
+    })
+  ]
+})
+```
